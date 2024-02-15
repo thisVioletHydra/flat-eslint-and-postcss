@@ -1,0 +1,52 @@
+# ----------------- HELPER -----------------
+# ignore all .a files
+# *.a
+# # but do track lib.a, even though you're ignoring .a files above
+# !lib.a
+# # only ignore the TODO file in the current directory, not subdir/TODO
+# /TODO
+# # ignore all files in any directory named build
+# build/
+# # ignore doc/notes.txt, but not doc/server/arch.txt
+# doc/*.txt
+# # ignore all .pdf files in the doc/ directory and any of its subdirectories
+# doc/**/*.pdf
+# ----------------- END -----------------
+
+# ----------------- GLOBAL -----------------
+*.*
+!*.vue
+!*.html
+!*.js
+!*.cjs
+!*.mjs
+!*.ts
+!*.d.ts
+!*.json 
+
+ 
+
+# ----------------- FILES -----------------
+/.eslintrc.cjs
+#/.stylelintrc.cjs
+/.eslint-rules.cjs
+/auto-imports.d.ts
+/components.d.ts
+/env.d.ts
+
+# ----------------- FOLDERS -----------------
+node_modules
+/static
+/assets
+/.output
+/build
+/dist
+/bin
+/obj
+/tests
+/stories
+/.viteCache
+/.vitecache
+/.gitlab-ci.yml
+/backup
+/backup/**/*
